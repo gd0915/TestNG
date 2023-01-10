@@ -15,6 +15,7 @@ public class Day16_SoftAssert {
         System.out.println("Line 15 Code");
         softAssert.assertTrue(false);//FAILS
         System.out.println("Line 17 Code");
+
         softAssert.assertAll();//Marking the test case as FAILED or PASSED
 
     }
