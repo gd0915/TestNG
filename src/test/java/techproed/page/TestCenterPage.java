@@ -23,3 +23,7 @@ public class TestCenterPage {
     public WebElement submitButton;
 
 }
+/*
+NOTE: i.  PageFactory class is used to instantiate the page object class and its elements.
+      ii. PageFactory supports initElements static method which actually instantiate the elements
+ */

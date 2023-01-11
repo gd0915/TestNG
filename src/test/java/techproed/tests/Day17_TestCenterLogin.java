@@ -1,9 +1,12 @@
 package techproed.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import techproed.page.TestCenterPage;
+import techproed.page.TestHomePage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 public class Day17_TestCenterLogin {
 
@@ -11,10 +14,14 @@ public class Day17_TestCenterLogin {
     public void loginTest(){
         TestCenterPage testCenterPage = new TestCenterPage();
         Driver.getDriver().get(ConfigReader.getProperty("testcenter_URL"));
-        testCenterPage.username.sendKeys("JohnDoe");
-        testCenterPage.password.sendKeys("123456");
+        TestHomePage testHomePage = new TestHomePage();
+        testCenterPage.username.sendKeys("techproed");
+        testCenterPage.password.sendKeys("SuperSecretPassword");
         testCenterPage.submitButton.click();
-
+        //verifying login is successful
+        //Assert.assertTrue(testHomePage.loginMessage.isDisplayed());
+        // DONE WITH REUSABLE METHOD. RECOMMENDED.
+        ReusableMethods.verifyElementDisplayed(testHomePage.loginMessage);
     }
 
 }
