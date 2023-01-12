@@ -206,7 +206,6 @@ public class ReusableMethods {
      *
      * @param by
      */
-
     public static void verifyElementNotDisplayed(By by) {
         try {
             assertFalse("Element should not be visible: " + by, Driver.getDriver().findElement(by).isDisplayed());

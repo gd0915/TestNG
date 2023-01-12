@@ -20,5 +20,14 @@ public class LoginPage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
 
+    @FindBy(xpath = "//*[text()='Bad credentials']")
+    public WebElement errorMessage;
+
+    @FindBy(xpath = "(//*[text()=' Login'])[2]")
+    public WebElement secondLogin;
+
+    @FindBy(xpath = "//*[text()='email must be a valid email']")
+    public WebElement invalidEmailMessage;
+
 
 }
