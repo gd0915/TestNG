@@ -29,5 +29,7 @@ public class LoginPage {
     @FindBy(xpath = "//*[text()='email must be a valid email']")
     public WebElement invalidEmailMessage;
 
+    @FindBy(xpath = "//div[@role='alert']")
+    public WebElement errorMessage_incorrectEmailPass;
 
 }
