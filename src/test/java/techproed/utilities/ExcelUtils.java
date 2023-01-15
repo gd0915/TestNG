@@ -76,7 +76,7 @@ public class ExcelUtils {
         }
     }
 
-    //============getting all data into two dimentional array and returning the data===
+    //============getting all data into two dimensional array and returning the data===
     public String[][] getDataArray() {
         String[][] data = new String[rowCount()][columnCount()];
         for (int i = 0; i < rowCount(); i++) {
