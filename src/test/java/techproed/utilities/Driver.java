@@ -38,8 +38,8 @@ public class Driver {
           // driver = WebDriverManager.chromedriver().create(); // NOTE===>>>new method after Selenium 4.5.
 
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));    // Whenever we call the driver it is going to be triggered
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));   // coming from Selenium
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));    // Whenever we call the driver it is going to be triggered
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));   // coming from Selenium
         driver.manage().window().maximize();
         return driver;
     }

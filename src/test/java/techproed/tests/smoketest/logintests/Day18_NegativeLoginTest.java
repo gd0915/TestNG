@@ -56,6 +56,7 @@ public class Day18_NegativeLoginTest {
         ReusableMethods.verifyElementDisplayed(loginPage.errorMessage);
         //2nd way
         ReusableMethods.verifyElementDisplayed(loginPage.secondLogin);
+        Driver.closeDriver();
     }
 
     /*
@@ -99,6 +100,7 @@ public class Day18_NegativeLoginTest {
         ReusableMethods.verifyElementNotDisplayed(loginPage.invalidEmailMessage);
 
         //Assert.assertFalse(loginPage.invalidEmailMessage.getText().equals("email must be a valid email"));
+        Driver.closeDriver();
 
     }
     /*
@@ -112,7 +114,7 @@ public class Day18_NegativeLoginTest {
     Customer password: fakepass
     Error: User with fake@bluerentalcars.com not found
      */
-    @Test
+    @Test(groups = "minor-regression-group")
     public void US100208_Negative_Login() throws IOException {
 
 //        As customer, I should not be able to log in the application
@@ -144,6 +146,7 @@ public class Day18_NegativeLoginTest {
         String errorMessage = loginPage.errorMessage_incorrectEmailPass.getText();
         Assert.assertEquals(errorMessage,"User with email fake@bluerentalcars.com not found");
         ReusableMethods.getScreenshot("NegativeLoginScreenshot");
+        Driver.closeDriver();
     }
 
     @Test
@@ -179,5 +182,6 @@ public class Day18_NegativeLoginTest {
         String errorMessage = loginPage.errorMessage_incorrectEmailPass.getText();
         Assert.assertEquals(errorMessage,"User with email "+fakeEmail+" not found");
         ReusableMethods.getScreenshot("NegativeLoginScreenshot");
+        Driver.closeDriver();
     }
 }

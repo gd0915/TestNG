@@ -46,5 +46,7 @@ public class Day18_PositiveLoginTest {
         //ALTERNATIVELY WE CAN ASSERT IF HOME PAGE LOGIN LINK IS NOT DISPLAYED. NOT RECOMMENDED
         //ReusableMethods.verifyElementNotDisplayed(homePage.homePageLoginLink);
 
+        Driver.closeDriver();
+
     }
 }

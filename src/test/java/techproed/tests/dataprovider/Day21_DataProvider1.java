@@ -26,11 +26,11 @@ public class Day21_DataProvider1 {
     @DataProvider(name = "my_smoke_data", parallel = true)  // This is not mandatory. We can give to DataProvider a custom name. In this case, we have to use this custom name in the test method.
     public Object[][] customerData(){
     // TEST DATA
-        Object[][] customerCredentials = {
-                {"sam.walker@bluerentalcars.com", "c!fas_art"},
-                {"kate.brown@bluerentalcars.com", "tad1$Fas"},
-                {"raj.khan@bluerentalcars.com", "v7Hg_va ^"},
-                {"pam.raymond@bluerentalcars.com", "Nga ^ g6!"}
+        Object [][] customerCredentials = {
+                {"sam.walker@bluerentalcars.com","c!fas_art"},
+                {"kate.brown@bluerentalcars.com","tad1$Fas"},
+                {"raj.khan@bluerentalcars.com","v7Hg_va^"},
+                {"pam.raymond@bluerentalcars.com","Nga^g6!"}
         };
         return customerCredentials;
     }
