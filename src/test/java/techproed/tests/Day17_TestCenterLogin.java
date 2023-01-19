@@ -1,9 +1,8 @@
 package techproed.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import techproed.page.TestCenterPage;
-import techproed.page.TestHomePage;
+import techproed.pages.TestCenterPage;
+import techproed.pages.TestHomePage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;

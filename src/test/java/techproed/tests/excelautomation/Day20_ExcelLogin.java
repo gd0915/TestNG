@@ -2,14 +2,13 @@ package techproed.tests.excelautomation;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-import techproed.page.HomePage;
-import techproed.page.LoginPage;
+import techproed.pages.HomePage;
+import techproed.pages.LoginPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ExcelUtils;
 import techproed.utilities.ReusableMethods;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 

@@ -1,7 +1,7 @@
 package techproed.tests;
 
 import org.testng.annotations.Test;
-import techproed.page.OpenSourcePage;
+import techproed.pages.OpenSourcePage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 

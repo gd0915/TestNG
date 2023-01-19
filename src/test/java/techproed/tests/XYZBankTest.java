@@ -3,11 +3,10 @@ package techproed.tests;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import techproed.page.XYZBankPage;
+import techproed.pages.XYZBankPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
@@ -97,7 +96,7 @@ public class XYZBankTest {
 
     XYZBankPage xyzBankPage;
 
-    @Test
+    @Test(groups="practice-smoke-test-group")
     public void xyzBankTest(){
 
         xyzBankPage = new XYZBankPage();

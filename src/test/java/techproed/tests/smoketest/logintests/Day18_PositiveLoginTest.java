@@ -1,8 +1,8 @@
 package techproed.tests.smoketest.logintests;
 
 import org.testng.annotations.Test;
-import techproed.page.HomePage;
-import techproed.page.LoginPage;
+import techproed.pages.HomePage;
+import techproed.pages.LoginPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;

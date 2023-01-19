@@ -1,12 +1,10 @@
 package techproed.tests.smoketest.logintests;
 
 import com.github.javafaker.Faker;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import techproed.page.HomePage;
-import techproed.page.LoginPage;
+import techproed.pages.HomePage;
+import techproed.pages.LoginPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
