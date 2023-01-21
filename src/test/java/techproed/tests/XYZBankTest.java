@@ -96,8 +96,8 @@ public class XYZBankTest {
 
     XYZBankPage xyzBankPage;
 
-    @Test(groups="practice-smoke-test-group")
-    public void xyzBankTest(){
+    @Test(groups="practice-smoke-test")
+    public void xyzBankTest() {
 
         xyzBankPage = new XYZBankPage();
 
@@ -224,6 +224,6 @@ public class XYZBankTest {
 //        Assert that number of customers is 0
         assertEquals(0, xyzBankPage.deleteButtonList.size());
 
-
+        Driver.closeDriver();
     }
 }

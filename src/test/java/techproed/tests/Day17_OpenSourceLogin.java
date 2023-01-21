@@ -1,9 +1,11 @@
 package techproed.tests;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import techproed.pages.OpenSourcePage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 public class Day17_OpenSourceLogin {
     /*
@@ -37,5 +39,11 @@ public class Day17_OpenSourceLogin {
         openSourcePage.userName.sendKeys("Admin");
         openSourcePage.password.sendKeys("admin123");
         openSourcePage.submitButton.click();
+    }
+
+    @AfterMethod
+    public void closeBrowser(){
+        ReusableMethods.waitFor(3);
+        Driver.closeDriver();
     }
 }

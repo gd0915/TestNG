@@ -19,19 +19,19 @@ public class ListenersTest1 {
     }
 
     @Test
-    public void test2(){
+    public void test02(){
         System.out.println("Test case 2 FAIL");
         Assert.assertTrue(false);//FAILS
     }
 
     @Test
-    public void test3(){
+    public void test03(){
         System.out.println("Test case 3 SKIPPED");
         throw new SkipException("SKIP THIS TEST CASE");
     }
 
     @Test
-    public void test4(){
+    public void test04(){
         System.out.println("Test case 4 NO SUCH ELEMENT EXCEPTION");
         Driver.getDriver().get("https://techproeducation.com/");
         Driver.getDriver().findElement(By.xpath("asegsdgga"));//NO SUCH ELEMENT EXCEPTION

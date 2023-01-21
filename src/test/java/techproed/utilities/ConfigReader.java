@@ -35,3 +35,8 @@ public class ConfigReader {
 //    }
 
 }
+/*
+Q: Where do you use static on your framework?
+A: In configuration reader class method and properties object static
+   I also used static in my driver class. Driver object and getDriver methods are static
+ */

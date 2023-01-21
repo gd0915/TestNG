@@ -8,6 +8,7 @@ import techproed.pages.Saucedemo_ProductsPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.JSUtils;
+import techproed.utilities.ReusableMethods;
 
 public class SaucedemoPrice {
     /*
@@ -25,9 +26,9 @@ public class SaucedemoPrice {
     Flash each web element you used
      */
 
-    @Test(groups="practice-smoke-test-group")
-    public void totalPrice(){
-//        Go to  https://www.saucedemo.com/
+    @Test(groups="practice-smoke-test")
+    public void totalPrice() {
+//        Go to  https://www.saucedemo.com
         Driver.getDriver().get(ConfigReader.getProperty("saucedemo_url"));
 
 //        Enter the username  as "standard_user"

@@ -24,3 +24,7 @@ public class OpenSourcePage {
 
 
 }
+/*
+==>>We use PageFactory in the page classes instantiate the page object class and its elements.
+==>>PageFactory supports initElements static method which actually instantiate the elements.
+ */

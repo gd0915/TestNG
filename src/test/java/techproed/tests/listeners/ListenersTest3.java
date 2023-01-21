@@ -8,6 +8,9 @@ import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
 public class ListenersTest3 {
+    // File //Settings // Plugins // MarketPlace ==>> testNG // Create TestNG XML Install
+    // right click on Test Class ==>> create TestNG XML
+    // Code // Reformat file ==>> to get the content of the xml file
 
     HomePage homePage;
     LoginPage loginPage;
@@ -26,7 +29,7 @@ public class ListenersTest3 {
         ReusableMethods.waitFor(3);
         loginPage.userName.sendKeys("jack@gmail.com");
         ReusableMethods.waitFor(3);
-        loginPage.password.sendKeys("12345");
+        loginPage.password.sendKeys("1234567890");//sending incorrect credential // THIS WILL FAIL
         ReusableMethods.waitFor(3);
 
         loginPage.loginButton.click();

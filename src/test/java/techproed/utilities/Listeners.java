@@ -4,6 +4,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import java.io.IOException;
+
 public class Listeners implements ITestListener {
     /*
     ITestListener is an interface
@@ -14,7 +16,7 @@ public class Listeners implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        System.out.println("onStart - Execute ONCE before ALL tests : "+context.getName());
+        System.out.println("onStart - Execute ONCE before ALL tests : "+context.getName());//Our project name
     }
 
     @Override
@@ -24,20 +26,26 @@ public class Listeners implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        System.out.println("onTestStart - Execute ONCE before EACH @Test : "+result.getName());
+        System.out.println("onTestStart - Execute ONCE before EACH @Test : "+result.getName());//test method name
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        System.out.println("onTestSuccess - Execute AFTER EACH PASSED @Test : "+result.getName());
+        System.out.println("onTestSuccess - Execute AFTER EACH PASSED @Test : "+result.getName());//test method name
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        System.out.println("onTestFailure - Execute AFTER EACH FAILED @Test "+result.getName());
+        System.out.println("onTestFailure - Execute AFTER EACH FAILED @Test : "+result.getName());
+        try {
+            ReusableMethods.getScreenshot("TEST CASE FAILED :" + result.getName());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
     @Override
     public void onTestSkipped(ITestResult result) {
-        System.out.println("onTestSkipped - Execute AFTER EACH SKIPPED @Test : "+result.getName());
+        System.out.println("onTestSkipped - Execute AFTER EACH SKIPPED @Test : "+result.getName());//test method name
     }
 }

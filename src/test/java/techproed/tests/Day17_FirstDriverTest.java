@@ -8,7 +8,7 @@ public class Day17_FirstDriverTest {
     @Test
     public void firstDriverTest(){
 
-//          driver ==> Driver.getDriver() (WE doo not need to extend to Driver class)
+//          driver ==> Driver.getDriver() (We do not need to extend to Driver class)
         Driver.getDriver().get("https://www.techproeducation.com");
 
 //          close the driver

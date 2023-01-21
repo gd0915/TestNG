@@ -11,8 +11,8 @@ public class Day17_TestCenterLogin {
 
     @Test
     public void loginTest(){
-        TestCenterPage testCenterPage = new TestCenterPage();
         Driver.getDriver().get(ConfigReader.getProperty("testcenter_URL"));
+        TestCenterPage testCenterPage = new TestCenterPage();
         TestHomePage testHomePage = new TestHomePage();
         testCenterPage.username.sendKeys("techproed");
         testCenterPage.password.sendKeys("SuperSecretPassword");

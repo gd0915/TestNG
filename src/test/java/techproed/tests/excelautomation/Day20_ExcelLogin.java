@@ -87,7 +87,7 @@ public class Day20_ExcelLogin {
 //        System.out.println(allTestData);
 //        System.out.println(excelUtils.getColumnsNames());
 //        System.out.println(excelUtils.getCellData(2,1));
-//        USING LOOP GET THE VALUES FROM THE MAP AND SEND IN THE UI
+//        USING LOOP GET THE VALUES FROM THE MAP AND SEND INTO THE UI
         for (Map<String,String> eachData :allTestData){
 //            Takes us to the login page
             login();

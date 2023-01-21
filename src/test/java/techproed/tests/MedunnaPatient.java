@@ -68,8 +68,8 @@ public class MedunnaPatient {
 
 
 
-    @Test(dataProvider ="medunnaCredentials", groups="practice-smoke-test-group" )
-    public void createPatientTest(String username, String password, String pFirstname, String pLastname, String pEmail, String pPhoneNumber){
+    @Test(dataProvider ="medunnaCredentials", groups="practice-smoke-test" )
+    public void createPatientTest(String username, String password, String pFirstname, String pLastname, String pEmail, String pPhoneNumber) {
 //        Go to https://medunna.com/
         Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
 
@@ -117,7 +117,7 @@ public class MedunnaPatient {
 
 //        Click on "Save" button
         JSUtils.clickElementByJS(medunnaPatientsPage.saveButton);
-        Driver.closeDriver();
+       Driver.closeDriver();
     }
 
     @AfterMethod
