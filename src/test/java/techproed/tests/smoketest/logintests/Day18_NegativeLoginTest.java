@@ -112,7 +112,7 @@ public class Day18_NegativeLoginTest {
     Customer password: fakepass
     Error: User with fake@bluerentalcars.com not found
      */
-    @Test(groups = "minor-regression-group")
+    @Test(groups = "minor-regression-group", retryAnalyzer = techproed.utilities.ListenersRetry.class)
     public void US100208_Negative_Login() throws IOException {
 
 //        As customer, I should not be able to log in the application

@@ -3,6 +3,7 @@
     <!--        listener tag is used to add Listeners-->
     <listeners>
         <!--        Path of the Listener Utility class-->
+        <!--        We cannot give the ListenersRetry class name below here because of the interface-->
         <listener class-name="techproed.utilities.Listeners"></listener>
     </listeners>
 
