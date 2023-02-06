@@ -1,5 +1,6 @@
 package techproed.tests.smoketest.logintests;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import techproed.pages.HomePage;
 import techproed.pages.LoginPage;
@@ -22,6 +23,7 @@ public class Day18_PositiveLoginTest {
     LoginPage loginPage;
     @Test(retryAnalyzer = techproed.utilities.ListenersRetry.class)
     public void US100201_Admin_Login(){
+        Reporter.log("Going to the application URL");
         //going to blue rental car home page
         Driver.getDriver().get(ConfigReader.getProperty("app_home_url"));
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Admin/IdeaProjects/testNGProject/src/test/java/techproed/tests/smoketest">
+        <classes>
+            <class name="techproed.tests.smoketest.logintests.Day18_NegativeLoginTest">
+                <methods>
+                    <include name="negativeLoginTestWithWrongPassword"/>
+                    <include name="US100208_Negative_Login_WithIncorrectEmail"/>
+                    <include name="US100208_Negative_Login"/>
+                    <include name="invalidCredsTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.smoketest.logintests.Day18_PositiveLoginTest">
+                <methods>
+                    <include name="US100201_Admin_Login"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.smoketest.reservationtests.Day19_Reservation">
+                <methods>
+                    <include name="reservationTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+<!-- CREATE AN XML FILE
+Right click on your smoke test package
+Create xml file
+Change the name : testngreport.xml
+Click on your project
+Run > Edit Configurations
+Create xml file.
+Refresh your project to see testng.xml
+Select Listeners
+Click + plus sign
+Add relevant reports
+Apply and OK
+Then we should see test-output folder
+In that folder there will be TestNG html reports
+We can use Reporter class to log information
+-->

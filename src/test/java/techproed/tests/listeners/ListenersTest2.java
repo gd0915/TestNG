@@ -3,10 +3,12 @@ package techproed.tests.listeners;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.SkipException;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import techproed.utilities.Driver;
 
 //ADD LISTENER UTIL PATH IN THE XML FILE
+@Listeners
 public class ListenersTest2 {
     @Test
     public void test01(){
